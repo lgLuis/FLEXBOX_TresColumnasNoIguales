@@ -1,0 +1,57 @@
+/*VARIABLES GLOBALES*/
+/*https://colorhunt.co/palette/281939*/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+:root{
+    --primario:#ffffc7;
+    --secundario:#233e8b;
+    --verdeAgua:#a9f1df;
+    --verde:#1eae98;
+    --fuentePpal:'Baloo Tammudu 2', cursive;
+}
+
+body{
+    font-family: var(--fuentePpal);
+    font-size: 1.6rem;
+}
+
+img{
+    max-width: 100%;
+}
+h1{
+    font-size: 4rem;
+}
+.contenedor{
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+/*Ok!*/
+
+@media(min-width:768px){
+    .contenedor-flex{
+        display: flex;
+        justify-content: space-between;
+    }
+    .contenido-ppal{
+        flex-basis: calc(60%-1rem);
+    }
+    .sidebar{
+        flex-basis: calc(20%-1rem);
+    }
+    .sidebar-1{
+        order: -1;
+    }
+}
+
+p{
+    text-align: justify;
+}
